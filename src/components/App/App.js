@@ -4,8 +4,8 @@ import Filter from '../Filter';
 import { Container, Head } from './App.styled';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts } from '../../redux/operations';
-import { selectError, selectIsLoading } from '../../redux/selectors';
+import { fetchContacts } from '../../redux/contacts/operations';
+import { selectError, selectIsLoading } from '../../redux/contacts/selectors';
 
 const App = () => {
   const dispatch = useDispatch();
