@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { ContactList } from 'components/ContactList/ContactList';
 import { ContactForm } from 'components/ContactForm/ContactForm';
-import { fetchTasks } from 'redux/contacts/operations';
-import { selectLoading } from 'redux/tasks/selectors';
+import { fetchContacts } from 'redux/contacts/operations';
+import { selectIsLoading } from 'redux/contacts/selectors';
 
 export default function Tasks() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectLoading);
+  const isLoading = useSelector(selectIsLoading);
 
   useEffect(() => {
-    dispatch(fetchTasks());
+    dispatch(fetchContacts());
   }, [dispatch]);
 
   return (

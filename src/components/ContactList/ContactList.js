@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import { selectVisibleContacts } from 'redux/contacts/selectors';
 
-const ContactList = () => {
+export const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
 
   return (
@@ -16,5 +16,3 @@ const ContactList = () => {
     </>
   );
 };
-
-export default ContactList;
