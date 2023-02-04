@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FormBlock = styled.div`
   padding: 5px;
-  border: 1px solid;
+
   width: 300px;
   margin-bottom: 10px;
 `;
