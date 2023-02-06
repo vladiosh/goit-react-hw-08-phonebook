@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { AppBar } from '../AppBar/AppBar';
+import { AppHead } from '../AppHead/AppHead';
 import { Suspense } from 'react';
 
 export const Layout = () => {
@@ -12,7 +12,7 @@ export const Layout = () => {
         padding: '0 16px',
       }}
     >
-      <AppBar />
+      <AppHead />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
