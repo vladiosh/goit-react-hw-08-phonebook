@@ -53,11 +53,10 @@ export const RegisterForm = () => {
     // </Form>
 
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 12,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
