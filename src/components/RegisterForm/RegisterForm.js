@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -11,7 +10,6 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 
@@ -34,24 +32,6 @@ export const RegisterForm = () => {
   };
 
   return (
-    // <Form onSubmit={handleSubmit} autoComplete="off">
-    //   <Label>
-    //     Username
-    //     <input type="text" name="name" />
-    //   </Label>
-    //   <Label>
-    //     Email
-    //     <input type="email" name="email" />
-    //   </Label>
-    //   <Label>
-    //     Password
-    //     <input type="password" name="password" />
-    //   </Label>
-    //   <Button type="submit" variant="contained">
-    //     Register
-    //   </Button>
-    // </Form>
-
     <ThemeProvider theme={theme}>
       <Container maxWidth="xs">
         <CssBaseline />
