@@ -9,8 +9,8 @@ export const AppHead = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="sticky">
+      <Toolbar component="nav">
         <Navigation />
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </Toolbar>
