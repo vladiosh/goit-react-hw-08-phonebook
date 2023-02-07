@@ -33,9 +33,9 @@ export default function Tasks() {
           <ContactForm />
           <Box
             sx={{
-              mt: '64px',
               display: 'flex',
-              alignItems: 'center',
+              border: '1px solid',
+              padding: '5px',
               flexDirection: 'column',
             }}
           >

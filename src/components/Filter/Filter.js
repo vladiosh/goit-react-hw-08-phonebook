@@ -1,12 +1,7 @@
 import React from 'react';
-
+import { FilterLabel, Input } from './Filter.styled';
 import { changeFilter } from '../../redux/contacts/filterSlice';
 import { useDispatch } from 'react-redux';
-
-import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -16,21 +11,10 @@ const Filter = () => {
     dispatch(changeFilter(value));
   };
   return (
-    <Box
-      component="label"
-      noValidate
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      <Grid container>
-        <Typography component="h1" variant="h5">
-          Find contacts by name
-        </Typography>
-        <TextField onChange={handleChange} required fullWidth type="text" />
-      </Grid>
-    </Box>
+    <FilterLabel>
+      Find contacts by name
+      <Input type="text" onChange={handleChange}></Input>
+    </FilterLabel>
   );
 };
 

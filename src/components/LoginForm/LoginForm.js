@@ -31,20 +31,6 @@ export const LoginForm = () => {
   };
 
   return (
-    // <Form onSubmit={handleSubmit} autoComplete="off">
-    //   <Label>
-    //     Email
-    //     <input type="email" name="email" />
-    //   </Label>
-    //   <Label>
-    //     Password
-    //     <input type="password" name="password" />
-    //   </Label>
-    //   <Button type="submit" variant="contained">
-    //     Log In
-    //   </Button>
-    // </Form>
-
     <ThemeProvider theme={theme}>
       <Container maxWidth="xs">
         <CssBaseline />
