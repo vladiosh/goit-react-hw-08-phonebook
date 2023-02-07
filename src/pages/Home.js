@@ -2,6 +2,8 @@ import { Box, Typography } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import videoBg from '../video/videoBg.mp4';
 
+document.body.style.overflow = 'hidden';
+
 export default function Home() {
   return (
     <Box
