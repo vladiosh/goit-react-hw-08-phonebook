@@ -50,6 +50,7 @@ export const LoginForm = () => {
         <CssBaseline />
         <Box
           sx={{
+            mt: '64px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
